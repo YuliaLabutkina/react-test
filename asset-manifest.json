@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/test-react/static/css/main.5d62c675.chunk.css",
+    "main.js": "/test-react/static/js/main.155d9a14.chunk.js",
+    "main.js.map": "/test-react/static/js/main.155d9a14.chunk.js.map",
+    "runtime-main.js": "/test-react/static/js/runtime-main.53cbba00.js",
+    "runtime-main.js.map": "/test-react/static/js/runtime-main.53cbba00.js.map",
+    "static/css/2.ebb6084d.chunk.css": "/test-react/static/css/2.ebb6084d.chunk.css",
+    "static/js/2.8580436d.chunk.js": "/test-react/static/js/2.8580436d.chunk.js",
+    "static/js/2.8580436d.chunk.js.map": "/test-react/static/js/2.8580436d.chunk.js.map",
+    "index.html": "/test-react/index.html",
+    "static/css/2.ebb6084d.chunk.css.map": "/test-react/static/css/2.ebb6084d.chunk.css.map",
+    "static/css/main.5d62c675.chunk.css.map": "/test-react/static/css/main.5d62c675.chunk.css.map",
+    "static/js/2.8580436d.chunk.js.LICENSE.txt": "/test-react/static/js/2.8580436d.chunk.js.LICENSE.txt",
+    "static/media/React.c220c779.svg": "/test-react/static/media/React.c220c779.svg",
+    "static/media/Star.be442597.svg": "/test-react/static/media/Star.be442597.svg",
+    "static/media/Watcher.78193a52.svg": "/test-react/static/media/Watcher.78193a52.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.53cbba00.js",
+    "static/css/2.ebb6084d.chunk.css",
+    "static/js/2.8580436d.chunk.js",
+    "static/css/main.5d62c675.chunk.css",
+    "static/js/main.155d9a14.chunk.js"
+  ]
+}
