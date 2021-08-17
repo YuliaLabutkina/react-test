@@ -34,6 +34,10 @@
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
+    "plugins": ["react-hooks"],
+    "rules": {
+      "react-hooks/exhaustive-deps": 0
+    },
     "extends": [
       "react-app",
       "react-app/jest"

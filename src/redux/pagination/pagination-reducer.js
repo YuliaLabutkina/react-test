@@ -3,6 +3,7 @@ import { createReducer } from '@reduxjs/toolkit';
 
 import * as paginationActions from './pagination-action';
 import * as searchQueryActions from '../searchQuery/searchQuery-action';
+import * as repoActions from '../repo/repo-action';
 
 const currentPage = createReducer(1, {
   [paginationActions.setCurrentPage]: (_, { payload }) => payload,
@@ -11,7 +12,7 @@ const currentPage = createReducer(1, {
 });
 
 const totalPageCount = createReducer(0, {
-  [paginationActions.setTotalPageCount]: (_, { payload }) => payload,
+  [repoActions.getRepoSuccess]: (_, { payload }) => payload.total_count,
   [searchQueryActions.setSearchQuery]: () => 0,
   [searchQueryActions.resetSearchQuery]: () => 0,
 });

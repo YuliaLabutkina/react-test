@@ -4,15 +4,13 @@ import '@pnotify/core/dist/BrightTheme.css';
 
 import { fetchRepo } from '../../services/github-api';
 import * as repoActions from './repo-action';
-import * as paginationActions from '../pagination/pagination-action';
 
 const getRepositories = (query, page) => async dispatch => {
   dispatch(repoActions.getRepoRequest());
 
   try {
     const { items, total_count } = await fetchRepo(query, page);
-    dispatch(paginationActions.setTotalPageCount(Number(total_count)));
-    dispatch(repoActions.getRepoSuccess(items));
+    dispatch(repoActions.getRepoSuccess({items, total_count: Number(total_count)}));
 
     if(total_count === 0) {
       notice({

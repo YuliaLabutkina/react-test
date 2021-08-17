@@ -8,18 +8,18 @@ const getNormalizedRepo = (repositories) => {
   return repositories.map(({id, name, owner, language, description, watchers, stargazers_count}) => {
     return {
       id,
-      name,
-      author: owner.login,
-      language,
-      description,
-      watchers,
-      stars: stargazers_count
+      name: name || 'unknown',
+      author: owner.login || 'unknown',
+      language: language || 'unknown',
+      description: description || "no description",
+      watchers: watchers || 0,
+      stars: stargazers_count || 0
     }
   });
 };
 
 const repositories = createReducer([], {
-  [repoActions.getRepoSuccess]: (_, { payload }) => getNormalizedRepo(payload),
+  [repoActions.getRepoSuccess]: (_, { payload }) => getNormalizedRepo(payload.items),
   [searchQueryActions.setSearchQuery]: () => [],
   [searchQueryActions.resetSearchQuery]: () => [],
 });

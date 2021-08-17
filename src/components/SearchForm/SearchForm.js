@@ -31,7 +31,6 @@ const SearchForm = () => {
             dispatch(searchQueryActions.setSearchQuery(searchQuery));
             dispatch(getRepositories(searchQuery, 1));
         }
-        // eslint-disable-next-line
     }, [debouncedSearchTerm, dispatch]);
 
     const handleChange = ({ target }) => {
