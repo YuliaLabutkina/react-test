@@ -1,8 +1,8 @@
 {
-  "name": "test-react",
+  "name": "react-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://YuliaLabutkina.github.io/test-react",
+  "homepage": "https://YuliaLabutkina.github.io/react-test",
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.1",
     "@testing-library/jest-dom": "^5.14.1",
